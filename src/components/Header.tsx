@@ -6,7 +6,7 @@ const Header: React.FC<any> = ({setServicesFilter}) => {
     return (
         <>
         <section>
-            <Grid container spacing={1} sx={{margin: '0px', width: '100%', marginTop: '30px', paddingRight: '13px'}}>
+            <Grid container spacing={1} sx={{margin: '0px', width: '100%', marginTop: '20px', paddingRight: '13px'}}>
                 <Grid xs={1} item>
                     <IconButton
                     sx={{
