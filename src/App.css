@@ -1,1 +1,60 @@
-
+.img0 {
+    background-image: url(./img/img0.png); 
+    background-color: #cccccc;
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.img1 {
+    background-image: url(./img/img1.png); 
+    background-color: #cccccc;
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.img2 {
+    background-image: url(./img/img2.png); 
+    background-color: #cccccc;
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.img3 {
+    background-image: url(./img/img3.png); 
+    background-color: #cccccc;
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.img4 {
+    background-image: url(./img/img4.png); 
+    background-color: #cccccc;
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.img5 {
+    background-image: url(./img/img5.png); 
+    background-color: #cccccc;
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}

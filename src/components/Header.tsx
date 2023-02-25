@@ -1,12 +1,13 @@
 import { ArrowBack, Search } from "@mui/icons-material";
 import { Grid, IconButton, Typography } from "@mui/material";
+import FilterButtons from "./FilterButtons";
 
-function Header() {
+const Header: React.FC<any> = ({setServicesFilter}) => {
     return (
         <>
         <section>
-            <Grid container spacing={1} sx={{margin: '0px', width: '100%', marginTop: '20px'}}>
-                <Grid xs={1}>
+            <Grid container spacing={1} sx={{margin: '0px', width: '100%', marginTop: '30px'}}>
+                <Grid xs={1} item>
                     <IconButton
                     sx={{
                         color: 'var(--colors-text-black)',
@@ -17,7 +18,7 @@ function Header() {
                     </IconButton>
                 </Grid>
                 
-                <Grid xs={10}>
+                <Grid xs={10} item>
                     <Typography
                     variant="h1"
                     sx={{
@@ -25,14 +26,14 @@ function Header() {
                         fontSize: 'var(--fs-2xl)',
                         fontWeight: 'var(--fw-bold)',
                         marginLeft: '10px',
-                        marginTop: '5px'
+                        marginTop: '5px',
                     }}
                     >
                         Nearby Your Location
                     </Typography>
                 </Grid>
                 
-                <Grid xs={1}>
+                <Grid xs={1} item>
                     <IconButton
                     sx={{
                         color: 'var(--colors-text-black)'
@@ -43,6 +44,8 @@ function Header() {
                 </Grid>
             </Grid>
         </section>
+        
+        <FilterButtons setServicesFilter={setServicesFilter} />
         </>
     );
 }

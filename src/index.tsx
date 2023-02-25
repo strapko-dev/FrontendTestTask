@@ -8,16 +8,8 @@ import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
 const theme = createTheme({
   palette: {
     primary: {
-      light: '#FFFFFF',
-      main: '#F5F5F5'
-    },
-    secondary: {
-      main: '#FB9400'
-    },
-    text: {
-      primary: '#212121',
-      secondary: '#424242',
-      disabled: '#757575',
+      main: '#FB9400',
+      contrastText: '#fff'
     }
   },
   typography: {
@@ -29,12 +21,12 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <ThemeProvider theme={theme}>
     <>
       <CssBaseline />
       <React.StrictMode>
-        <App />
+        <ThemeProvider theme={theme}>
+          <App />
+        </ThemeProvider>
       </React.StrictMode>
     </>
-  </ThemeProvider>
 );
