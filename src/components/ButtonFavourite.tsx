@@ -2,7 +2,7 @@ import { BookmarkBorderOutlined, BookmarkOutlined } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
 import { useState } from "react";
 
-const ButtonFavourite: React.FC<any> = () => {
+const ButtonFavourite: React.FC = () => {
     const [favourite, setFavourite] = useState(false)
     return (
         <div>

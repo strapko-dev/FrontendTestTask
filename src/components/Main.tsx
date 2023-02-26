@@ -1,8 +1,8 @@
 function Main({children}: any) {
     return (
-        <>
+        <section>
             {children}
-        </>
+        </section>
     );
 }
 

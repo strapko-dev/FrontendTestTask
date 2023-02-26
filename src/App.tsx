@@ -5,8 +5,8 @@ import { useState } from 'react';
 import Main from './components/Main';
 import Services from './components/Services';
 
-interface serviceProps {
-  All: boolean,
+export interface serviceProps {
+  all: boolean,
   haircuts: boolean,
   makeUp: boolean,
   manicure: boolean,

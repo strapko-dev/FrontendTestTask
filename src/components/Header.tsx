@@ -1,8 +1,14 @@
 import { ArrowBack, Search } from "@mui/icons-material";
 import { Grid, IconButton, Typography } from "@mui/material";
 import FilterButtons from "./FilterButtons";
+import { serviceProps } from "../App";
+import { Dispatch, SetStateAction } from "react";
 
-const Header: React.FC<any> = ({setServicesFilter}) => {
+export type setServiceProps = {
+    setServicesFilter: Dispatch<SetStateAction<serviceProps | undefined>>
+}
+
+const Header: React.FC<setServiceProps> = ({setServicesFilter}) => {
     return (
         <>
         <section>

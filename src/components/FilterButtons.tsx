@@ -1,7 +1,8 @@
 import { Button, Grid } from "@mui/material";
 import { useEffect, useState } from "react";
+import { setServiceProps } from "./Header";
 
-const FilterButtons: React.FC<any> = ({ setServicesFilter }) => {
+const FilterButtons: React.FC<setServiceProps> = ({ setServicesFilter }) => {
     const [all, setAll] = useState(true)
     const [haircuts, setHaircuts] = useState(false)
     const [makeUp, setMakeUp] = useState(false)

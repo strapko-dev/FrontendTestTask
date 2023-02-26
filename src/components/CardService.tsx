@@ -3,8 +3,14 @@ import Typography from '@mui/material/Typography';
 import { Box, Card, CardActionArea, CardActions } from '@mui/material';
 import { LocationOn, StarHalf } from '@mui/icons-material';
 import ButtonFavourite from './ButtonFavourite';
+import { Dispatch, SetStateAction } from 'react';
+import { dataServicesProps } from './Services';
 
-const CardService: React.FC<any> = (props) => {
+interface dataProps {
+    data: dataServicesProps
+}
+
+const CardService: React.FC<dataProps> = (props) => {
     let {name, address, distance, rate, img} = props.data
     
     return (

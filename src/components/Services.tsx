@@ -2,8 +2,9 @@ import { Grid } from "@mui/material";
 import { useEffect, useState } from "react";
 import { dataServices } from "../data/dataServices";
 import CardService from "./CardService";
+import { serviceProps } from "../App";
 
-interface dataServicesProps {
+export interface dataServicesProps {
     name: string;
     address: string;
     distance: string;
@@ -12,13 +13,6 @@ interface dataServicesProps {
     haircuts: boolean;
     makeUp: boolean;
     manicure: boolean;
-}
-
-interface serviceProps {
-    all: boolean,
-    haircuts: boolean,
-    makeUp: boolean,
-    manicure: boolean,
 }
 
 const Services: React.FC<any> = ({servicesFilter}: {servicesFilter: serviceProps}) => {
