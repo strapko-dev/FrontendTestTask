@@ -5,21 +5,14 @@ import { useState } from 'react';
 import Main from './components/Main';
 import Services from './components/Services';
 
-export interface serviceProps {
-  all: boolean,
-  haircuts: boolean,
-  makeUp: boolean,
-  manicure: boolean,
-}
-
 function App() {
-  const [servicesFilter, setServicesFilter] = useState<serviceProps>()
+  const [category, setCategory] = useState('all')
   
   return (
     <Container maxWidth="sm">
-      <Header setServicesFilter={setServicesFilter} />
+      <Header setCategory={setCategory} category={category} />
       <Main>
-        <Services servicesFilter={servicesFilter} />
+        <Services category={category} />
       </Main>
     </Container>
   );

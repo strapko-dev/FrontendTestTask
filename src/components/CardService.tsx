@@ -3,14 +3,13 @@ import Typography from '@mui/material/Typography';
 import { Box, Card, CardActionArea, CardActions } from '@mui/material';
 import { LocationOn, StarHalf } from '@mui/icons-material';
 import ButtonFavourite from './ButtonFavourite';
-import { Dispatch, SetStateAction } from 'react';
-import { dataServicesProps } from './Services';
+import { DataServicesProps } from './Services';
 
-interface dataProps {
-    data: dataServicesProps
+interface DataProps {
+    data: DataServicesProps
 }
 
-const CardService: React.FC<dataProps> = (props) => {
+const CardService: React.FC<DataProps> = (props) => {
     let {name, address, distance, rate, img} = props.data
     
     return (
@@ -21,7 +20,6 @@ const CardService: React.FC<dataProps> = (props) => {
                 borderRadius: '20px',
                 backgroundColor: 'var(--colors-ui-base)',
                 boxShadow: 'var(--shadow)',
-                paddingLeft: '10px'
             }}>
                 <CardActionArea sx={{
                     display: 'flex',
@@ -29,11 +27,12 @@ const CardService: React.FC<dataProps> = (props) => {
                     height: '110px', 
                     margin: '0',
                 }}>
-                    <Box sx={{width: '80px'}}>
-                    <div className={img}></div>
+                    <Box sx={{width: '80px', marginLeft: '10px'}}>
+                    <div className={`img ${img}`}></div>
                     </Box>
 
                     <CardContent sx={{flexGrow: '1'}}>
+
                         <Typography sx={{
                             color: 'var(--colors-text-black)',
                             fontSize: 'var(--fs-xl)',
@@ -41,6 +40,7 @@ const CardService: React.FC<dataProps> = (props) => {
                         }}>
                             {name}
                         </Typography>
+
                         <Typography sx={{
                             color: 'var(--colors-text-light)',
                             fontSize: 'var(--fs-sm)',
@@ -48,6 +48,7 @@ const CardService: React.FC<dataProps> = (props) => {
                         }}>
                             {address}
                         </Typography>
+
                         <Box sx={{marginTop: '10px', display: 'flex'}}>
                             <Typography sx={{display: 'flex', alignItems: 'center'}}>
                                 <LocationOn sx={{width: '15px', color: 'var(--colors-orange)'}}/>
@@ -58,6 +59,7 @@ const CardService: React.FC<dataProps> = (props) => {
                                 {rate}
                             </Typography>
                         </Box>
+
                     </CardContent>
 
                     <CardActions sx={{paddingTop: '5px', height: '100%', display: 'flex', alignItems: 'start'}}>

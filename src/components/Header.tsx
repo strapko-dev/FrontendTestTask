@@ -1,14 +1,14 @@
 import { ArrowBack, Search } from "@mui/icons-material";
 import { Grid, IconButton, Typography } from "@mui/material";
 import FilterButtons from "./FilterButtons";
-import { serviceProps } from "../App";
 import { Dispatch, SetStateAction } from "react";
 
-export type setServiceProps = {
-    setServicesFilter: Dispatch<SetStateAction<serviceProps | undefined>>
+export interface setServiceProps {
+    setCategory: Dispatch<SetStateAction<string>>;
+    category: string;
 }
 
-const Header: React.FC<setServiceProps> = ({setServicesFilter}) => {
+const Header: React.FC<setServiceProps> = ({setCategory, category}) => {
     return (
         <>
         <section>
@@ -51,7 +51,7 @@ const Header: React.FC<setServiceProps> = ({setServicesFilter}) => {
             </Grid>
         </section>
         
-        <FilterButtons setServicesFilter={setServicesFilter} />
+        <FilterButtons setCategory={setCategory} category={category} />
         </>
     );
 }
