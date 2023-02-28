@@ -1,4 +1,3 @@
-import './App.css';
 import { Container } from '@mui/material';
 import Header from './components/Header';
 import { useState } from 'react';

@@ -34,8 +34,3 @@ body {
   font-weight: var(--fw-regular);
   background-color: var(--colors-bg);
 }
-
-.button{
-  color: var(--colors-text-black);
-  background-color: black;
-}

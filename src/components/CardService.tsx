@@ -28,7 +28,8 @@ const CardService: React.FC<DataProps> = (props) => {
                     margin: '0',
                 }}>
                     <Box sx={{width: '80px', marginLeft: '10px'}}>
-                    <div className={`img ${img}`}></div>
+                    {/* <div className={`img ${img}`}></div> */}
+                    <img src={require(`../img/${img}.png`)} alt={name} width="80" height="80" style={{}}/>
                     </Box>
 
                     <CardContent sx={{flexGrow: '1'}}>

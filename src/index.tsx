@@ -4,17 +4,16 @@ import './index.css';
 import App from './App';
 import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
 
-
 const theme = createTheme({
   palette: {
     primary: {
       main: '#FB9400',
       contrastText: '#fff'
-    }
+    },
   },
   typography: {
     fontFamily: "'Urbanist', sans-serif"
-  }
+  },
 })
 
 const root = ReactDOM.createRoot(
