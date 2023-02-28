@@ -18,8 +18,8 @@ const CardService: React.FC<DataProps> = (props) => {
                 width: '100%',
                 marginTop: '24px',
                 borderRadius: '20px',
-                backgroundColor: 'var(--colors-ui-base)',
-                boxShadow: 'var(--shadow)',
+                backgroundColor: 'colorsUiBase.main',
+                boxShadow: '0px 4px 60px 0px rgba(4, 6, 15, 0.05)', 
             }}>
                 <CardActionArea sx={{
                     display: 'flex',
@@ -28,35 +28,34 @@ const CardService: React.FC<DataProps> = (props) => {
                     margin: '0',
                 }}>
                     <Box sx={{width: '80px', marginLeft: '10px'}}>
-                    {/* <div className={`img ${img}`}></div> */}
-                    <img src={require(`../img/${img}.png`)} alt={name} width="80" height="80" style={{}}/>
+                        <img src={require(`../img/${img}.png`)} alt={name} width="80" height="80" style={{}}/>
                     </Box>
 
                     <CardContent sx={{flexGrow: '1'}}>
 
                         <Typography sx={{
-                            color: 'var(--colors-text-black)',
-                            fontSize: 'var(--fs-xl)',
-                            fontWeight: 'var(--fw-bold)',
+                            color: 'colorsTextBlack.main',
+                            fontSize: 'fsXl',
+                            fontWeight: 'fontWeightBold',
                         }}>
                             {name}
                         </Typography>
 
                         <Typography sx={{
-                            color: 'var(--colors-text-light)',
-                            fontSize: 'var(--fs-sm)',
-                            fontWeight: 'var(--fw-regular)',
+                            color: 'colorsTextGreyLight.main',
+                            fontSize: 'fsSm',
+                            fontWeight: 'fontWeightRegular',
                         }}>
                             {address}
                         </Typography>
 
                         <Box sx={{marginTop: '10px', display: 'flex'}}>
                             <Typography sx={{display: 'flex', alignItems: 'center'}}>
-                                <LocationOn sx={{width: '15px', color: 'var(--colors-orange)'}}/>
+                                <LocationOn sx={{width: '15px', color: 'colorsOrange.main'}}/>
                                 {distance}
                             </Typography>
                             <Typography sx={{display: 'flex', alignItems: 'center', marginLeft: '10px'}}>
-                                <StarHalf sx={{width: '15px', color: 'var(--colors-orange)'}} />
+                                <StarHalf sx={{width: '15px', color: 'colorsOrange.main'}} />
                                 {rate}
                             </Typography>
                         </Box>

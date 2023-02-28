@@ -14,10 +14,10 @@ const OneFilterButton: React.FC<ButtonProps> = ({ category, setCategory, current
             <Button size="small"
             variant={category === currentCategory ? 'contained' : 'outlined'} 
             onClick={() => setCategory(currentCategory)} 
-            color="primary"
+            color="filterButton"
             sx={{
-                fontSize: 'var(--fs-md)',
-                fontWeight: 'var(--fw-bold)',
+                fontSize: 'fsMd',
+                fontWeight: 'fontWeightBold',
                 boxShadow: 'none',
                 borderRadius: '30px',
                 width: '100%',

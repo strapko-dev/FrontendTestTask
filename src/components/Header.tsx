@@ -16,7 +16,7 @@ const Header: React.FC<setServiceProps> = ({setCategory, category}) => {
                 <Grid xs={1} item>
                     <IconButton
                     sx={{
-                        color: 'var(--colors-text-black)',
+                        color: 'colorsTextBlack.main',
                         marginLeft: '-8px'
                     }}
                     >
@@ -28,9 +28,9 @@ const Header: React.FC<setServiceProps> = ({setCategory, category}) => {
                     <Typography
                     variant="h1"
                     sx={{
-                        color: 'var(--colors-text-black)',
-                        fontSize: 'var(--fs-2xl)',
-                        fontWeight: 'var(--fw-bold)',
+                        color: 'colorsTextBlack.main',
+                        fontSize: 'fs2Xl',
+                        fontWeight: 'fontWeightBold',
                         marginLeft: '10px',
                         marginTop: '5px',
                     }}
@@ -42,7 +42,7 @@ const Header: React.FC<setServiceProps> = ({setCategory, category}) => {
                 <Grid xs={1} item>
                     <IconButton
                     sx={{
-                        color: 'var(--colors-text-black)'
+                        color: 'colorsTextBlack.main',
                     }}
                     >
                         <Search />
